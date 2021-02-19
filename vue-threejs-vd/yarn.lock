@@ -7810,6 +7810,11 @@ thread-loader@^2.1.3:
     loader-utils "^1.1.0"
     neo-async "^2.6.0"
 
+three-dat.gui@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/three-dat.gui/-/three-dat.gui-2.0.7.tgz#9f2fc7dadebad99b335da660e33c3562dd10c80d"
+  integrity sha512-u+uRJF3BxY6O1JnRwjGVNdBvvmyaHG5/92RrvILtZclblAUda0ZcfUOXwWbr+hzPZYgJT5HykayjSyATdBQvUw==
+
 three.js@^0.77.1:
   version "0.77.1"
   resolved "https://registry.yarnpkg.com/three.js/-/three.js-0.77.1.tgz#07858a8749e4b627a31083252a2d987776cca32a"
