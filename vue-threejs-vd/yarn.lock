@@ -986,6 +986,13 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
+"@types/mini-css-extract-plugin@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@types/mini-css-extract-plugin/-/mini-css-extract-plugin-0.9.1.tgz#d4bdde5197326fca039d418f4bdda03dc74dc451"
+  integrity sha512-+mN04Oszdz9tGjUP/c1ReVwJXxSniLd7lF++sv+8dkABxVNthg6uccei+4ssKxRHGoMmPxdn7uBdJWONSJGTGQ==
+  dependencies:
+    "@types/webpack" "*"
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -2335,6 +2342,14 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.4.1, chalk@^2.4
     ansi-styles "^3.2.1"
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
+
+chalk@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
+  integrity sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
 
 chalk@^4.0.0, chalk@^4.1.0:
   version "4.1.0"
@@ -7815,17 +7830,10 @@ three-dat.gui@^2.0.7:
   resolved "https://registry.yarnpkg.com/three-dat.gui/-/three-dat.gui-2.0.7.tgz#9f2fc7dadebad99b335da660e33c3562dd10c80d"
   integrity sha512-u+uRJF3BxY6O1JnRwjGVNdBvvmyaHG5/92RrvILtZclblAUda0ZcfUOXwWbr+hzPZYgJT5HykayjSyATdBQvUw==
 
-three.js@^0.77.1:
-  version "0.77.1"
-  resolved "https://registry.yarnpkg.com/three.js/-/three.js-0.77.1.tgz#07858a8749e4b627a31083252a2d987776cca32a"
-  integrity sha1-B4WKh0nktiejEIMlKi2Yd3bMoyo=
-  dependencies:
-    three "0.77.0"
-
-three@0.77.0:
-  version "0.77.0"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.77.0.tgz#8b0b1b00047689ceaa020d480a562ca60d87ff37"
-  integrity sha1-iwsbAAR2ic6qAg1IClYspg2H/zc=
+three@^0.125.2:
+  version "0.125.2"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.125.2.tgz#dcba12749a2eb41522e15212b919cd3fbf729b12"
+  integrity sha512-7rIRO23jVKWcAPFdW/HREU2NZMGWPBZ4XwEMt0Ak0jwLUKVJhcKM55eCBWyGZq/KiQbeo1IeuAoo/9l2dzhTXA==
 
 through2@^2.0.0:
   version "2.0.5"
@@ -8236,6 +8244,18 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
+
+vue-loader-v16@^16.0.0-beta.5.4:
+  version "16.0.0-beta.5.4"
+  resolved "https://registry.yarnpkg.com/vue-loader-v16/-/vue-loader-v16-16.0.0-beta.5.4.tgz#8fbcf87dc69c9979ecd777adba4e8a0e7fd95a7e"
+  integrity sha512-sis7XW0hab2NRbWMGbYXlFwhaLE2sV/hqhVkLxV2/8XLsLL6Ylfz590IaJMSMiyqsEmFHW+fSfevnnIqOsYxoQ==
+  dependencies:
+    "@types/mini-css-extract-plugin" "^0.9.1"
+    chalk "^3.0.0"
+    hash-sum "^2.0.0"
+    loader-utils "^1.2.3"
+    merge-source-map "^1.1.0"
+    source-map "^0.6.1"
 
 "vue-loader-v16@npm:vue-loader@^16.1.0":
   version "16.1.2"
