@@ -1,7 +1,7 @@
 // import { MathUtils } from "https://threejs.org/build/three.js";
 // import * as THREE from 'https://unpkg.com/three/build/three.module.js';
 import * as THREE from './dependacy/three.module.js';
-import {test} from './init.js';
+// import {test} from './init.js';
 var sceneControl = {
     max_width
 }
@@ -38,7 +38,7 @@ var PixelSeed;
 
 function init() {
     reset_resolution()
-    test();
+    // test();
     // init scene and camera
     scene = new THREE.Scene();
     scene.background = new THREE.Color(0xf0f0f0);
@@ -364,8 +364,8 @@ var animate = function () {
     // cone.rotation.x += 0.01;
     // cone.rotation.Y += 0.01;
     if (frames_to_render > 0 || frames_to_render === -1) {
-            // updatePositions();
-    // LLoydStep();
+            updatePositions();
+    LLoydStep();
         // LLoydStep();
         // render_to_target();
         renderer.render(scene, camera);
