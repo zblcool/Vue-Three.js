@@ -73,6 +73,7 @@ export default {
         var element = [Math.random() * -50 + 25, Math.random() * -50 + 25];
         points.push(element);
       }
+      console.log(Delaunay)
       const delaunay = Delaunay.from(points);
       const voronoi = delaunay.voronoi([0, 0, 50, 50]);
       // console.log(delaunay.triangles);
@@ -188,7 +189,7 @@ export default {
           "color",
           new THREE.Float32BufferAttribute(colors, 3)
         );
-
+        // geometry.computeBoundingSphere();
         const material = new THREE.MeshPhongMaterial({
           side: THREE.DoubleSide,
           vertexColors: true,
@@ -196,7 +197,9 @@ export default {
         });
 
         mesh = new THREE.Mesh(geometry, material);
+        // const pointsMesh = new THREE.Points(geometry,material)
         scene.add(mesh);
+        // scene.add(pointsMesh)
       }
 
       {
@@ -324,9 +327,9 @@ export default {
 body {
   margin: 0;
 }
-#container {
+/* #container {
   height: 400px;
   width: 400px;
   border: 1px solid red;
-}
+} */
 </style>

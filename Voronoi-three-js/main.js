@@ -364,8 +364,8 @@ var animate = function () {
     // cone.rotation.x += 0.01;
     // cone.rotation.Y += 0.01;
     if (frames_to_render > 0 || frames_to_render === -1) {
-            updatePositions();
-    LLoydStep();
+            // updatePositions();
+    // LLoydStep();
         // LLoydStep();
         // render_to_target();
         renderer.render(scene, camera);
